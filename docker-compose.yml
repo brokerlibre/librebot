@@ -1,0 +1,78 @@
+version: '2'
+
+services:
+  # ============================= Rocketchat ==================================
+  rocketchat:
+    image: rocket.chat:0.69.2
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - ROOT_URL=http://localhost:3000
+      - MONGO_URL=mongodb://mongo:27017/rocketchat
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASS=liberty
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:3.2
+    restart: unless-stopped
+    volumes:
+      - ./data/db:/data/db
+    command: mongod --smallfiles --oplogSize 128
+
+  # ================================= Bot =====================================
+  bot:
+    build:
+      context: .
+      dockerfile: ./docker/bot.Dockerfile
+    restart: unless-stopped
+    environment:
+      - ROCKETCHAT_URL=rocketchat:3000
+      - ROCKETCHAT_ADMIN_USERNAME=admin
+      - ROCKETCHAT_ADMIN_PASSWORD=liberty
+      - ROCKETCHAT_BOT_USERNAME=libre
+      - ROCKETCHAT_BOT_PASSWORD=liberty
+
+      # Should be set to 'production' or 'dev'
+      - ENVIRONMENT_NAME=localhost
+      # Last commit hash using this command: git rev-parse HEAD
+      - BOT_VERSION=last-commit-hash
+    ports:
+      - 5005:5005
+      - 5002:5002
+    depends_on:
+      - actions
+    volumes:
+      - ./bot:/bot
+      - ./scripts:/scripts
+    command: "make run-api"
+
+
+  actions:                                                                       
+    build:                                                                       
+      context: .                                                                 
+      dockerfile: ./docker/actions.Dockerfile                                    
+    ports:                                                                       
+      - 5055:5055                                                                
+    volumes:                                                                     
+      - ./bot/actions:/bot/actions
+      - ./bot/Makefile:/bot/Makefile                                             
+    command: "make run-actions" 
+
+  # =============================== Notebooks =================================
+  notebooks:
+    build:
+      context: .
+      dockerfile: ./docker/notebooks.Dockerfile
+    volumes:
+      - ./bot:/work/bot
+      - ./notebooks:/work/notebooks
+    ports:
+      - 8888:8888
+
+volumes:
+  esdata:
+    driver: local
