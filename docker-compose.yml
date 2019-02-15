@@ -48,7 +48,7 @@ services:
     volumes:
       - ./bot:/bot
       - ./scripts:/scripts
-    #command: "make run-rocketchat"
+    command: "make run-rocketchat"
 
 
   actions:                                                                       
