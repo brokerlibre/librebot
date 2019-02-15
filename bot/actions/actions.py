@@ -6,4 +6,4 @@ class ActionTest(Action):
       return "action_test"
 
    def run(self, dispatcher, tracker, domain):
-      dispatcher.utter_message("This is a custom action test message")
+      dispatcher.utter_message("Esta é uma mensagem customizada!")
