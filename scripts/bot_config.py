@@ -34,8 +34,8 @@ parser.add_argument(
     help='Bot username at RocketChat(default: libre)'
 )
 parser.add_argument(
-    '--bot-password', '-bp', type=str, default='liberty',
-    help='Bot password at RocketChat(default: liberty)'
+    '--bot-password', '-bp', type=str, default='libre',
+    help='Bot password at RocketChat(default: libre)'
 )
 parser.add_argument(
     '--bot-avatar', '-ba', type=str, default='https://avatars.githubusercontent.com/libertylibre',

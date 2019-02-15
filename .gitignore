@@ -1,3 +1,84 @@
+### Rasa ###
+bot/models
+rasa_core.log
+errors.json
+
+### Rasa evaluation ###
+notebooks/models/
+notebooks/errors.json
+notebooks/lab/
+notebooks/evaluate-intents.ipynb
+notebooks/stories/failed_stories.md
+notebooks/stories/matrix.pdf
+bot/.ipython/
+bot/.keras/
+bot/.local/
+bot/work
+
+### Intents Notebook ###
+notebooks/intents/evaluate-intents.ipynb
+notebooks/intents/models
+notebooks/intents/errors.json
+
+ ### Stories Notebook ###
+notebooks/stories/models
+notebooks/stories/errors.json
+notebooks/stories/img
+
+### Rocketchat ###
+/data
+uploads
+
+
+### database
+web/postegres-data
+
+
+# Created by https://www.gitignore.io/api/vim,linux,macos,python
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -23,7 +104,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -41,20 +121,15 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
+.pytest_cache/
 nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
-.pytest_cache/
 
 # Translations
 *.mo
 *.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/
@@ -76,7 +151,7 @@ target/
 .python-version
 
 # celery beat schedule file
-celerybeat-schedule
+celerybeat-schedule.*
 
 # SageMath parsed files
 *.sage.py
@@ -102,3 +177,17 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+### Vim ###
+# swap
+.sw[a-p]
+.*.sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+# auto-generated tag files
+tags
+
+
+# End of https://www.gitignore.io/api/vim,linux,macos,python

@@ -21,7 +21,7 @@ env ROCKETCHAT_URL=rocketchat:3000         \
     ROCKETCHAT_ADMIN_USERNAME=admin        \
     ROCKETCHAT_ADMIN_PASSWORD=liberty      \
     ROCKETCHAT_BOT_USERNAME=libre          \
-    ROCKETCHAT_BOT_PASSWORD=liberty        \
+    ROCKETCHAT_BOT_PASSWORD=libre          \
     ENVIRONMENT_NAME=localhost             \
     BOT_VERSION=last-commit-hash
 

@@ -34,7 +34,7 @@ services:
       - ROCKETCHAT_ADMIN_USERNAME=admin
       - ROCKETCHAT_ADMIN_PASSWORD=liberty
       - ROCKETCHAT_BOT_USERNAME=libre
-      - ROCKETCHAT_BOT_PASSWORD=liberty
+      - ROCKETCHAT_BOT_PASSWORD=libre
 
       # Should be set to 'production' or 'dev'
       - ENVIRONMENT_NAME=localhost
@@ -48,7 +48,7 @@ services:
     volumes:
       - ./bot:/bot
       - ./scripts:/scripts
-    command: "make run-api"
+    #command: "make run-rocketchat"
 
 
   actions:                                                                       
