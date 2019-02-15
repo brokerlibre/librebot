@@ -1,0 +1,35 @@
+intents:
+  - cumprimentar
+  - despedir
+
+  - action_test
+
+templates:
+  utter_cumprimentar:
+    - text: |
+          Olá meu nome é Libre e eu estou aqui para te ajudar, corretor.
+
+  utter_despedir:
+    - text: |
+          Tchau
+
+    - text: |
+          Até mais, se precisar de algo mais, me avise.
+
+    - text: |
+          Se precisar de algo mais, me avise, tchau.
+
+  utter_default:
+    - text: |
+        Desculpe, não entendi, você pode me perguntar de outra forma? Não se
+        esqueça de usar #Help para eu listar minhas funcionalidades.
+
+    - text: |
+        Não compreendi, pode me perguntar de outra forma?
+
+actions:
+  - utter_cumprimentar
+  - utter_despedir
+  - utter_default
+
+  - action_test
