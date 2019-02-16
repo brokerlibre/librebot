@@ -33,8 +33,8 @@ services:
       - ROCKETCHAT_URL=rocketchat:3000
       - ROCKETCHAT_ADMIN_USERNAME=admin
       - ROCKETCHAT_ADMIN_PASSWORD=liberty
-      - ROCKETCHAT_BOT_USERNAME=libre
-      - ROCKETCHAT_BOT_PASSWORD=libre
+      - ROCKETCHAT_BOT_USERNAME=libria
+      - ROCKETCHAT_BOT_PASSWORD=libria
 
       # Should be set to 'production' or 'dev'
       - ENVIRONMENT_NAME=localhost

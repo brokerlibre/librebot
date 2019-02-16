@@ -26,20 +26,20 @@ logger.addHandler(ch)
 parser = argparse.ArgumentParser()
 
 parser.add_argument(
-    '--bot-name', '-bn', type=str, default='libre',
-    help='Bot username at RocketChat(default: libre)'
+    '--bot-name', '-bn', type=str, default='libria',
+    help='Bot username at RocketChat(default: libria)'
 )
 parser.add_argument(
-    '--bot-username', '-bu', type=str, default='libre',
-    help='Bot username at RocketChat(default: libre)'
+    '--bot-username', '-bu', type=str, default='libria',
+    help='Bot username at RocketChat(default: libria)'
 )
 parser.add_argument(
-    '--bot-password', '-bp', type=str, default='libre',
-    help='Bot password at RocketChat(default: libre)'
+    '--bot-password', '-bp', type=str, default='libria',
+    help='Bot password at RocketChat(default: libria)'
 )
 parser.add_argument(
-    '--bot-avatar', '-ba', type=str, default='https://avatars.githubusercontent.com/libertylibre',
-    help='Bot avatar photo link (default: librebot\'s github avatar)'
+    '--bot-avatar', '-ba', type=str, default='https://avatars.githubusercontent.com/brokerlibre',
+    help='Bot avatar photo link (default: brokerlibre\'s github avatar)'
 )
 parser.add_argument(
     '--admin-name', '-an', type=str, default='admin',

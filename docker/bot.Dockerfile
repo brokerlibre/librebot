@@ -20,8 +20,8 @@ env ROCKETCHAT_URL=rocketchat:3000         \
     WORDS_PER_SECOND_TYPING=5              \
     ROCKETCHAT_ADMIN_USERNAME=admin        \
     ROCKETCHAT_ADMIN_PASSWORD=liberty      \
-    ROCKETCHAT_BOT_USERNAME=libre          \
-    ROCKETCHAT_BOT_PASSWORD=libre          \
+    ROCKETCHAT_BOT_USERNAME=libria         \
+    ROCKETCHAT_BOT_PASSWORD=libria         \
     ENVIRONMENT_NAME=localhost             \
     BOT_VERSION=last-commit-hash
 

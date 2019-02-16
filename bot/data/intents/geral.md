@@ -8,20 +8,20 @@
 
 ## intent:cumprimentar
 - olá
-- ola libre
-- oi libre
+- ola libria
+- oi libria
 - bom dia
 - boa tarde
 - boa noite
-- oi libre quanto tempo
+- oi libria quanto tempo
 - oi dnv
 
 ## intent:elogio
 - que legal
 - massa
-- parabéns librea
-- gosto de você librea
-- você facilita muito minha vida,libria
+- parabéns libria
+- gosto de você libria
+- você facilita muito minha vida, libria
 - top
 - vlw
-- librea voce é a melhor assistente virtual
+- libria voce é a melhor assistente virtual

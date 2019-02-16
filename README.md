@@ -31,9 +31,9 @@ sudo docker-compose run --rm bot make run-console
 
 ## Contribute with us
 
-Please check our others modules [here](https://github.com/libertylibre).
+Please check our others modules [here](https://github.com/brokerlibre).
 If you have any feature suggestion or bug, please report us with an 
-[Issue](https://github.com/libertylibre/librebot/issues)
+[Issue](https://github.com/brokerlibre/librebot/issues)
 
 ## Acknowledgments
 
