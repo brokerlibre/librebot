@@ -1,28 +1,58 @@
 intents:
   - cumprimentar
   - despedir
+  - informacao
+  - elogio
 
   - action_test
 
 templates:
   utter_cumprimentar:
     - text: |
-          Olá meu nome é Libre e eu estou aqui para te ajudar, corretor.
+          Olá meu nome é Libria e estou aqui para te ajudar.
+    - text: |
+          Oi, estou pronta pra voltar ao trabalho.
+    - text: |
+          Olá, pode perguntar o que quiser, eu não preciso dormir :D
 
   utter_despedir:
     - text: |
-          Tchau
+          Tchau, se precisar sabe onde me achar
 
     - text: |
           Até mais, se precisar de algo mais, me avise.
 
     - text: |
           Se precisar de algo mais, me avise, tchau.
+ 
+  utter_informacao:
+    - text: |
+          Você já conferiu os últimos estudos do Sonho Seguro?
+          https://www.sonhoseguro.com.br/categoria/estudos/
+
+    - text: |
+          Veja o que o Sonho Seguro postou sobre Carreira
+          https://www.sonhoseguro.com.br/categoria/carreira/
+
+    - text: |
+          O Sonho Seguro pode ter informações novas sobre Capilização
+          https://www.sonhoseguro.com.br/categoria/capitalizacao/
+
+  utter_elogio:
+    - text: |
+          Muito obrigado, Humano
+    - text:
+          Obrigado estou aqui para poupar seu tempo e te fazer tomar as 
+          melhores decisões.
+    - text:
+          Agradeço, trabalhando juntos vamos nos tornar a melhor dupla 
+          corretora do mundo!
+    - text:
+          Obrigado, estou aprendendo com o melhor ;)
 
   utter_default:
     - text: |
-        Desculpe, não entendi, você pode me perguntar de outra forma? Não se
-        esqueça de usar #Help para eu listar minhas funcionalidades.
+        Desculpe, não entendi, você pode me perguntar de outra form
 
     - text: |
         Não compreendi, pode me perguntar de outra forma?
@@ -31,5 +61,7 @@ actions:
   - utter_cumprimentar
   - utter_despedir
   - utter_default
+  - utter_informacao
+  - utter_elogio
 
   - action_test
