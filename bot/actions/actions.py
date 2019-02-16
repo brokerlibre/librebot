@@ -30,7 +30,7 @@ class ActionInsurers(Action):
       response = get_data('insurer')
       print(response)
       dispatcher.utter_message('Ok, aqui está a sua lista de seguradoras:')
-      info = get_info(response, 'name')
+      info = get_info(response, 'site')
       dispatcher.utter_message(info)
 
 class ActionCustomers(Action):

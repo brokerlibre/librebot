@@ -56,7 +56,7 @@ templates:
         Desculpe, não entendi, você pode me perguntar de outra form
 
     - text: |
-        Não compreendi, pode me perguntar de outra forma?
+        Não compreendi,pergunte me outra forma?
 
 actions:
   - utter_cumprimentar
