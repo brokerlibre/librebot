@@ -13,20 +13,32 @@ def get_data(complement=''):
         print(ValueError)
     return response.json()
 
-def get_names(all_data):
+def get_info(all_data, info):
     list = ''
     for data in all_data:
-       list += data['name'] 
+       list += data[info] 
        list += '\n'
     return list
 
 #-------------------------------------------
 
-class ActionTest(Action):
+class ActionInsurers(Action):
+   def name(self):
+      return "insurers"
+
+   def run(self, dispatcher, tracker, domain):
+      response = get_data('insurer')
+      print(response)
+      dispatcher.utter_message('Ok, aqui está a sua lista de seguradoras:')
+      info = get_info(response, 'name')
+      dispatcher.utter_message(info)
+
+class ActionCustomers(Action):
    def name(self):
       return "customers"
 
    def run(self, dispatcher, tracker, domain):
       response = get_data('customer')
-      names = get_names(response)
+      names = get_info(response, 'name')
+      dispatcher.utter_message('Ok, aqui está a sua lista de clientes:')
       dispatcher.utter_message(names)

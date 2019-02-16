@@ -5,6 +5,7 @@ intents:
   - elogio
 
   - customers
+  - insurers
 
 templates:
   utter_cumprimentar:
@@ -65,4 +66,5 @@ actions:
   - utter_elogio
 
   - customers
+  - insurers
 

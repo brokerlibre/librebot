@@ -4,3 +4,10 @@
 - lista de clientes
 - customers
 - clientes
+
+## intent:insurers
+- insurers
+- seguradoras
+- quero ver minhas seguradoras
+- me liste as seguradoras
+- me ajuda com seguradoras
