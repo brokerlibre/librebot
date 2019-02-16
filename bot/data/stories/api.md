@@ -1,10 +1,10 @@
 ## test action
 * cumprimentar
     - utter_cumprimentar
-* action_test
-    - action_test
+* customers
+    - customers
 
 ## test action 2
-* action_test
-    - action_test
+* customers
+    - customers
 

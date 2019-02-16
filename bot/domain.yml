@@ -4,7 +4,7 @@ intents:
   - informacao
   - elogio
 
-  - action_test
+  - customers
 
 templates:
   utter_cumprimentar:
@@ -64,4 +64,5 @@ actions:
   - utter_informacao
   - utter_elogio
 
-  - action_test
+  - customers
+

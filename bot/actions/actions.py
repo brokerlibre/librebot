@@ -24,7 +24,7 @@ def get_names(all_data):
 
 class ActionTest(Action):
    def name(self):
-      return "action_test"
+      return "customers"
 
    def run(self, dispatcher, tracker, domain):
       response = get_data('customer')

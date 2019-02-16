@@ -1,7 +1,6 @@
-## intent:action_test
-- test custom action
-- custom action
-- actions
-- custom actions
-- action
-- test action
+## intent:customers
+- me liste meus clientes
+- quais são meus clientes
+- lista de clientes
+- customers
+- clientes
